@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Navbar from './components/Navbar'
+import HeroSection from './components/HeroSection'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
@@ -13,6 +14,8 @@ function App() {
  
    
     <Navbar/>
+    <div className="max-w-7xl mx-auto pt-20 px-6"> <HeroSection/></div>
+   
 
 
     </>
