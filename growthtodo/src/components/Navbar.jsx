@@ -27,7 +27,7 @@ setMobileDrawerOpen(!mobileDrawOpen)
            </ul>
            <div className="hidden lg:flex justify-center space-x-12 items-center">
             <a href='#' className="py-2 px-3 border rounded-md">Sign In</a>
-            <a href='#' className="py-2 px-3 bg-gradient-to-r from-orange-500 to-orange-800">Create an Account</a>
+            <a href='#' className="py-2 px-3 bg-gradient-to-r from-blue-500 to-blue-800  border rounded-md">Create an Account</a>
            </div>
            <div className="lg:hidden md:flex-col justify-end">
             <button onClick={toggleNavbar}>
