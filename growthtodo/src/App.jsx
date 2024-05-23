@@ -3,6 +3,9 @@ import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
 import FeatureSection from './components/FeatureSection'
 import WorkFlow from './components/WorkFlow'
+import Pricing from './components/Pricing'
+import Testimonals from './components/Testimonals'
+import Footer from './components/Footer'
 // import { Workflow } from 'lucide-react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
@@ -22,7 +25,9 @@ function App() {
     <FeatureSection/>
     {/* <Workflow/> */}
     <WorkFlow/>
-    
+    <Pricing/>
+    <Testimonals/>
+    <Footer/>
     </div>
 
     </>
