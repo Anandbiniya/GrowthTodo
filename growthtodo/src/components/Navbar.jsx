@@ -3,13 +3,29 @@ import { Menu,X } from 'lucide-react'
 import { useState } from 'react'
 import logo from '../assets/logo.png'
 import {navItems} from '../constants'
+// import {Link} from "react-router-dom"
+
+
+
                                        
 
 const Navbar = () => {
     const [mobileDrawOpen,setMobileDrawerOpen]=useState(false);
+    
     const toggleNavbar=()=>{
 setMobileDrawerOpen(!mobileDrawOpen)
     }
+
+  const  scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+            offsetTop: "60px"
+          });
+        }
+      }
   return (
 <nav className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80">
     <div className="container px-4 mx-auto relative text-sm">
@@ -21,7 +37,11 @@ setMobileDrawerOpen(!mobileDrawOpen)
            <ul className="hidden lg:flex ml-14 space-x-12 text-red">
             {navItems.map((item, index)=>(
                 <li key={index}>
-                    <a href={item.href}>{item.label}</a>
+                    <button className='text-white' onClick={
+                        ()=>{
+                            scrollToSection(item.href)
+                        }
+                    }>{item.label}</button>
                 </li>
             ))}
            </ul>

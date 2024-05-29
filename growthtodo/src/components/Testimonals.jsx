@@ -4,7 +4,7 @@ import { testimonials } from '../constants';
 function Testimonals() {
   return (
     <div className=' mt-20 tracking-wide'>
-        <h2 className='text-3xl sm:text lg:text-6xl text-center my-10 lg:my-20'>
+        <h2 id='a4' className='text-3xl sm:text lg:text-6xl text-center my-10 lg:my-20'>
             What People are saying
         </h2>
         <div className='flex  flex-wrap justify-center'>

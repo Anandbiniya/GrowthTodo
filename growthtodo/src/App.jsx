@@ -6,6 +6,7 @@ import WorkFlow from './components/WorkFlow'
 import Pricing from './components/Pricing'
 import Testimonals from './components/Testimonals'
 import Footer from './components/Footer'
+import ContactUs from './components/ContactUs'
 // import { Workflow } from 'lucide-react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
@@ -27,6 +28,7 @@ function App() {
     <WorkFlow/>
     <Pricing/>
     <Testimonals/>
+    <ContactUs/>
     <Footer/>
     </div>
 
