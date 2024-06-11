@@ -7,13 +7,17 @@ import Pricing from './components/Pricing'
 import Testimonals from './components/Testimonals'
 import Footer from './components/Footer'
 import ContactUs from './components/ContactUs'
+import ReactGA from 'react-ga4';
+
 // import { Workflow } from 'lucide-react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  ReactGA.initialize('Your-Measurement-ID');
+
 
   return (
     <>
